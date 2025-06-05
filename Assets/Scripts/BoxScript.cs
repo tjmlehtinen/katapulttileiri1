@@ -7,7 +7,7 @@ public class BoxScript : MonoBehaviour
     {
         if (!hasScored && collision.gameObject.CompareTag("Ground"))
         {
-            Debug.Log("osuu maahan");
+            ScoreManager.Instance.AddScore(10);
             hasScored = true;
         }
     }
